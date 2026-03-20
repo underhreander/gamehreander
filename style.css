@@ -1,0 +1,27 @@
+/* ============================================
+   SOFTMASTER — ADDITIONAL / OVERRIDE STYLES
+   ============================================ */
+
+/* This file can be used for page-specific overrides.
+   Main styles are in css/landing.css */
+
+/* Hidden utility */
+.hidden {
+    display: none !important;
+}
+
+/* Download page email input focus */
+.download input[type="email"]:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Download page form button hover */
+.download form .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Page-level transitions */
+.download-page .step-card {
+    animation: stepFadeIn 0.5s ease;
+}
