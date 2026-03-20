@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include "LicenseManager.h"  // Предположим, что класс LicenseManager в этом файле
+
+void generateLicense() {
+    LicenseManager licenseManager;
+
+    // Ввод HWID клиента
+    std::string hwid;
+    std::cout << "Введите HWID клиента: ";
+    std::getline(std::cin, hwid);
+
+    // Количество дней для лицензии
+    int days;
+    std::cout << "Введите количество дней для лицензии: ";
+    std::cin >> days;
+
+    // Создание лицензионного файла
+    bool success = LicenseManager::createLicenseFile(hwid, days);
+
+    if (success) {
+        std::cout << "Лицензия успешно создана и сохранена в license.dat!" << std::endl;
+    } else {
+        std::cout << "Не удалось создать лицензию." << std::endl;
+    }
+}
+
+int main() {
+    generateLicense();
+    return 0;
+}

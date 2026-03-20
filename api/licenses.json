@@ -1,0 +1,13 @@
+{
+    "LICENSE_KEY_12345": {
+        "key": "LICENSE_KEY_12345",
+        "days": 365,
+        "user_info": "User Name",
+        "max_activations": 3,
+        "current_activations": 0,
+        "features": "basic",
+        "created_at": 1622487600,
+        "status": "active",
+        "activations": []
+    }
+}
